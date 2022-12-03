@@ -37,7 +37,26 @@ namespace Api.Controllers
             }                
         ;        
             return user;
+            var user2 = new User
+            {
+                Id = 2,
+                Name = "Marko",
+                Surname = "Maric",
+                Age = 24,
+                DateOfBirth = DateTime.Now,
+                Statistics = new PlayerStatistics
+                {
+                    NumberOfGoals = 21
+                },
+                Club = new Club
+                {
+                    Name = "Partizan"
+                },
+                Role = new Role
+                {
+                    Name = "Player"
+                }
+            };  
         }
     }
 }
-
